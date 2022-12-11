@@ -1,38 +1,96 @@
-.App {
+.container {
+  background-color: #212529;
+  height: 300px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.cart-button-box {
+  text-align: right;
+  padding: 10px;
+
+}
+
+.head-container {
+  color: white;
+  font-weight: bolder;
+  font-size: xx-large;
+  margin-bottom: 0;
+}
+
+.heading-slogan-text {
+  color: grey;
+  font-size: medium;
+  margin-top: 0%;
+  padding: 0;
+}
+
+.sales-box-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+
+.sales-box-container {
+  padding: 20px 20px;
+  margin-bottom: 50px;
+  /* color: black; */
+}
+
+.sales-img {
+  height: 150px;
+  aspect-ratio: 1/1;
+  object-fit: "fill";
+
+}
+
+.sales-item-name {
+  color: black;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.image-label {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.label-sale {
+  background-color: black;
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  font-size: large;
+
+}
+
+button {
+  width: max-content;
+
+  border-radius: 5px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.button-bar {
+  display: grid;
+  grid-template-rows: auto;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -1,25 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { useState } from 'react';
+import { SalesBoxList } from './SalesBoxList';
+
+
 
 function App() {
+  const [like, setLike] = useState(0);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='cart-button-box'>
+        <button>
+          <ShoppingCartIcon /> Cart {like}
+        </button>
+      </div>
+
+      <div className='container'>
+        <div className='head-container'>
+          <h1>Shop in style</h1>
+        </div>
+        <p className='heading-slogan-text'><h3>with this shop homepage template</h3></p>
+      </div>
+      <SalesBoxList like={like} setLike={setLike} />
     </div>
   );
 }
 
 export default App;
+//"https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
